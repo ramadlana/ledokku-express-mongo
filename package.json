@@ -1,0 +1,19 @@
+{
+  "name": "exercise-express-vidly-app-2",
+  "version": "1.0.0",
+  "description": "exercise vidly with mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hidayah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "mongoose": "^5.12.10",
+    "node": "^16.1.0"
+  }
+}
