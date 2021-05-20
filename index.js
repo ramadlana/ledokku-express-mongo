@@ -36,6 +36,7 @@ app.use("/api/customers/", customerUrl);
 // Change ENV using export NODE_ENV=production
 let envName = app.get("env");
 console.log(`env: ${envName}`);
+console.log("this is version2");
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("listening " + port));
