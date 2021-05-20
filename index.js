@@ -13,9 +13,10 @@ const vidlyDebug = require("debug")("foo:bar"); //after this we need enable ENV 
 const mongoose = require("mongoose");
 const databaseName = "vidly";
 
+const mongpass = process.env.MONGPASS;
 // Connect in here, and operate on another files
 mongoose.connect(
-  `mongodb+srv://user:a%24QkQE3myJ.wahE@cluster0.htwr9.mongodb.net/${databaseName}?authSource=admin&replicaSet=atlas-gsstiv-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true`,
+  `mongodb+srv://user:${mongpass}@cluster0.htwr9.mongodb.net/${databaseName}?authSource=admin&replicaSet=atlas-gsstiv-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true`,
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
